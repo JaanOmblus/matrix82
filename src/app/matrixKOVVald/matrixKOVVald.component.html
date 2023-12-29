@@ -1,0 +1,53 @@
+
+
+<p>Valla mõtted... {{ oigeKirje }}</p>
+<p>Suhtarv AKM {{ akmF }}</p>
+<p>Suhtarv IKK {{ ikkF }}</p>
+
+<!--ul>
+<li *ngFor="let arrayValue of arrayObject">
+  {{ arrayValue }}
+</li>
+</ul>
+
+<ul>
+<li *ngFor="let arrayVaartus of oigeKirje">
+  {{ arrayVaartus }}
+</li>
+</ul>
+
+<div *ngFor='let language of dataaa?.languages'>
+{{ getKey(language) }} -> 
+{{ getValue(language) }}
+</div>
+
+<div *ngFor='let ratio of kovValdArray?.ratiosVald'>
+{{ getKey(ratio) }} -> 
+{{ getValue(ratio) }}
+</div>
+
+<p>{{ object() }}</p-->
+
+  <button (click)="onclick()" type="button" class="btn  btn-danger">
+  {{ReadMore?"Read More":"Read Less"}}
+  </button>
+
+
+  <ng-container *ngIf="visible">
+
+  <table id="employees">
+  <tr>
+    <th>AKM</th>
+    <th>IKK</th>
+    <th>KOS</th>
+    <th>LKKKK</th>
+  </tr>
+  <tr *ngFor="let kovid2 of oigeKirje">
+    <td>{{kovid2.AKM_Median}}</td>
+    <td>{{kovid2.IKK_Median}}</td>
+    <td>{{kovid2.KOS_Median}}</td>
+    <td>{{kovid2.LKKKK_Median}}</td>
+  </tr>
+  </table>
+
+  </ng-container>
